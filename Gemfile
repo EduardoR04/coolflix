@@ -9,7 +9,6 @@ gem 'activesupport' , '~> 5.0', '< 6.0'
 
 group :development do
    gem 'pg'
-  gem "dm-sqlite-adapter"
   gem 'rspec'
   gem 'rack-test'
   gem 'capybara', '3.0.0'
