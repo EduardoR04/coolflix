@@ -1,0 +1,26 @@
+current directory: /Users/eddieramos/Projects/coolflix/vendor/bundle/ruby/2.6.0/gems/do_sqlite3-0.10.17/ext/do_sqlite3
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20210607-87865-1pmzrv5.rb extconf.rb
+checking for sqlite3.h... yes
+checking for sqlite3_open() in -lsqlite3... yes
+checking for localtime_r()... yes
+checking for gmtime_r()... yes
+checking for sqlite3_prepare_v2()... yes
+checking for sqlite3_open_v2()... yes
+checking for sqlite3_enable_load_extension()... no
+creating Makefile
+
+current directory: /Users/eddieramos/Projects/coolflix/vendor/bundle/ruby/2.6.0/gems/do_sqlite3-0.10.17/ext/do_sqlite3
+make "DESTDIR=" clean
+
+current directory: /Users/eddieramos/Projects/coolflix/vendor/bundle/ruby/2.6.0/gems/do_sqlite3-0.10.17/ext/do_sqlite3
+make "DESTDIR="
+compiling do_common.c
+compiling do_sqlite3.c
+compiling do_sqlite3_extension.c
+linking shared-object do_sqlite3/do_sqlite3.bundle
+ld: warning: directory not found for option '-L/opt/local/lib'
+ld: warning: directory not found for option '-L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.Internal.sdk/usr/local/lib'
+
+current directory: /Users/eddieramos/Projects/coolflix/vendor/bundle/ruby/2.6.0/gems/do_sqlite3-0.10.17/ext/do_sqlite3
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 do_sqlite3.bundle ./.gem.20210607-87865-vht7fz/do_sqlite3

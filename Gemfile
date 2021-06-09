@@ -8,7 +8,7 @@ gem 'sinatra-namespace'
 gem 'activesupport' , '~> 5.0', '< 6.0'
 
 group :development do
-   gem 'pg'
+   gem 'sqlite3', '~> 1.3', '< 1.4'
   gem "dm-sqlite-adapter"
   gem 'rspec'
   gem 'rack-test'
@@ -19,7 +19,7 @@ group :development do
   gem 'puma'
 end
 
-group :production do
+group :test, :production do
   gem 'pg'
   gem 'dm-postgres-adapter'
 end

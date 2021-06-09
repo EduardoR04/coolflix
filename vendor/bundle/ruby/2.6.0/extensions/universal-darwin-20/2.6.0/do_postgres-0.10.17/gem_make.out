@@ -1,0 +1,39 @@
+current directory: /Users/eddieramos/Projects/coolflix/vendor/bundle/ruby/2.6.0/gems/do_postgres-0.10.17/ext/do_postgres
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20210609-45720-rn93on.rb extconf.rb
+checking for -lpq... yes
+checking for libpq-fe.h... yes
+checking for libpq/libpq-fs.h... yes
+checking for postgres.h... yes
+checking for mb/pg_wchar.h... yes
+checking for catalog/pg_type.h... yes
+checking for localtime_r()... yes
+checking for gmtime_r()... yes
+checking for PQsetClientEncoding()... yes
+checking for pg_encoding_to_char()... yes
+checking for PQfreemem()... yes
+checking for rb_thread_fd_select()... yes
+creating Makefile
+
+current directory: /Users/eddieramos/Projects/coolflix/vendor/bundle/ruby/2.6.0/gems/do_postgres-0.10.17/ext/do_postgres
+make "DESTDIR=" clean
+
+current directory: /Users/eddieramos/Projects/coolflix/vendor/bundle/ruby/2.6.0/gems/do_postgres-0.10.17/ext/do_postgres
+make "DESTDIR="
+compiling do_common.c
+compiling do_postgres.c
+In file included from do_postgres.c:47:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/ruby.h:33:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/ruby/ruby.h:24:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/universal-darwin20/ruby/config.h:165:9: warning: 'SIZEOF_SIZE_T' macro redefined [-Wmacro-redefined]
+#define SIZEOF_SIZE_T SIZEOF_LONG
+        ^
+/usr/local/Cellar/postgresql/11.5/include/server/pg_config.h:857:9: note: previous definition is here
+#define SIZEOF_SIZE_T 8
+        ^
+1 warning generated.
+linking shared-object do_postgres/do_postgres.bundle
+ld: warning: directory not found for option '-L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.Internal.sdk/usr/local/lib'
+
+current directory: /Users/eddieramos/Projects/coolflix/vendor/bundle/ruby/2.6.0/gems/do_postgres-0.10.17/ext/do_postgres
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 do_postgres.bundle ./.gem.20210609-45720-1bt0cwx/do_postgres
